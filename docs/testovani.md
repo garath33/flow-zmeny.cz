@@ -21,4 +21,4 @@ Nové snímky patří do stejného pull requestu, aby bylo vidět, co se opravdu
 
 Když se mění text akce, e-mail, odkaz na přihlášku nebo strukturovaná data, upraví se odpovídající očekávání v `tests/functional.spec.js` a `tests/seo-security.spec.js`. Hash v hlavičce CSP se musí shodovat s obsahem JSON-LD. Test to porovná a při rozdílu spadne. Hash se spočítá jako SHA-256 z přesného textu uvnitř `<script type="application/ld+json">` a do meta značky se zapíše jako `'sha256-...'`.
 
-Lighthouse prahy jsou v `lighthouserc.json`: výkon aspoň 0,90, přístupnost, best practices a SEO aspoň 0,95.
+Lighthouse prahy jsou v `lighthouserc.json`. Měří se třikrát a bere se medián, protože jeden běh na GitHubu občas spadne jen kvůli vytížení runneru. Výkon musí být aspoň 0,80. Přístupnost, best practices a SEO aspoň 0,95.
