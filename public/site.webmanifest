@@ -1,0 +1,17 @@
+{
+  "name": "Flow Změny",
+  "short_name": "Flow Změny",
+  "lang": "cs",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#fdfbf7",
+  "theme_color": "#4a7c7a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
